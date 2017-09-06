@@ -32,8 +32,8 @@ canvas {
 	<script>
 	// Render GeoJSON features on a spherical object.
 // Create Three.js scene, camera, & light
-var WIDTH = window.innerWidth - 30,
-    HEIGHT = window.innerHeight - 30;
+var WIDTH = window.innerWidth,
+    HEIGHT = window.innerHeight;
  
 var angle = 75,
     aspect = WIDTH / HEIGHT,
@@ -60,7 +60,7 @@ pointLight.position.z = 1000;
 scene.add(pointLight);
 
 // Create a sphere to make visualization easier.
-var geometry = new THREE.SphereGeometry(30,62,62);
+var geometry = new THREE.SphereGeometry(50,62,62);
 var material = new THREE.MeshPhongMaterial({
 	map: new THREE.ImageUtils.loadTexture("./assets/textures/earthmap.jpg"),
 	color: 0xDDDDDD,
@@ -80,7 +80,10 @@ camera.position.z = 50;
 
 
 //Enable controls
-controls = new THREE.TrackballControls(camera);
+controls = new THREE.TrackballControls(camera, renderer.domElement);
+	controls.userRotateSpeed  = 1.5; 
+	controls.minDistance = 100; // how far can you zoom in
+    controls.maxDistance = 90; // how far can you zoom out 
 
 // Slow down zooming
 controls.zoomSpeed = 0.1;
