@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--
-/*
+
 	<title>Three.js</title>
 	<style>
 		
@@ -15,11 +14,12 @@ body {
    margin:0; 
    padding:0; 
 }
-
+	</style>
+<!--
+/*
 canvas {
    background: #CCCCCC;
 }
-	</style>
 	-->
 </head>
 <body>
@@ -28,12 +28,15 @@ canvas {
 	</div>
 	
 	<script src="https://rawgit.com/mrdoob/three.js/dev/build/three.js"></script>
-	<script src="https://rawgit.com/mrdoob/three.js/dev/examples/js/controls/TrackballControls.js "></script>
+	<!--<script src="https://rawgit.com/mrdoob/three.js/dev/examples/js/controls/TrackballControls.js "></script>-->
+	<script src="./lib/OrbitControls.js"></script>
 	<script src="./lib/main.js"></script>
-
 	
 	
-	<canvas width="3000" height="1742" style="width: 1500px; height: 871px;"></canvas>
+		
+	<canvas></canvas>
+	<!-- width="3000" height="1742" style="width: 1500px; height: 871px;" -->
+	
 	
 </body>
 </html>
