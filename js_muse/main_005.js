@@ -39,7 +39,7 @@ camera.add(pointLight);
 // Create a sphere to make visualization easier.
 var geometry = new THREE.SphereGeometry(30,62,62);
 var material = new THREE.MeshPhongMaterial({
-	map: new THREE.TextureLoader().load('./assets/textures/earthmap.jpg'),
+	map: new THREE.TextureLoader().load('/images/earthmap.jpg'),
 	color: 0xDDDDDD,
 	wireframe: false,
 	transparent: true
