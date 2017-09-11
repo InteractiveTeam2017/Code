@@ -1,3 +1,4 @@
+// JavaScript Document
 // Render GeoJSON features on a spherical object.
 // Create Three.js scene, camera, & light
 var WIDTH = window.innerWidth,
@@ -60,7 +61,7 @@ var spotLight = new THREE.SpotLight(0xffffff, 1.2, 90000, Math.PI/70, 1, 1);
 // Create a sphere to make visualization easier.
 var geometry = new THREE.SphereGeometry(35,100,100);
 var material = new THREE.MeshPhongMaterial({
-	map: new THREE.TextureLoader().load('./assets/textures/earthtwo.jpeg'),
+	map: new THREE.TextureLoader().load('/images/earthtwo.jpeg'),
 	color: 0xDDDDDD,
 	wireframe: false,
 	transparent: true
@@ -87,7 +88,7 @@ var materialglow = new THREE.MeshPhongMaterial({
 	var spriteMaterial = new THREE.SpriteMaterial( 
 	{ 
 		
-		map: new THREE.TextureLoader().load('./assets/textures/glow.png'),
+		map: new THREE.TextureLoader().load('/images/glow.png'),
 		//useScreenCoordinates: false, 
 		//alignment: THREE.SpriteAlignment.center,
 		color: 0xffffff, transparent: false, blending: THREE.AdditiveBlending
