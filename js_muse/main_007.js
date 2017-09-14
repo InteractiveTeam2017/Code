@@ -115,7 +115,7 @@ scene.add(sphere);
 var particleMat = new THREE.PointsMaterial({
 		color: 'rgb(255, 255, 255)',
 		size: 2,
-
+        map: new THREE.TextureLoader().load('/images/particle.png'),
 		transparent: true,
 		blending: THREE.AdditiveBlending,
 		depthWrite: false

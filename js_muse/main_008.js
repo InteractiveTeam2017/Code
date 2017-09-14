@@ -115,7 +115,7 @@ scene.add(sphere);
 var particleMat = new THREE.PointsMaterial({
 		color: 'rgb(255, 255, 255)',
 		size: 2,
-
+        map: new THREE.TextureLoader().load('/images/particle.png'),
 		transparent: true,
 		blending: THREE.AdditiveBlending,
 		depthWrite: false
@@ -215,7 +215,8 @@ controls.noPan = true;
 	controls.autoRotateSpeed = 1;
 	controls.minDistance = 80; // how far can you zoom in
 	controls.maxDistance = 70; // how far can you zoom out
-
+    // disable two finger move
+    controls.enablePan = false;
 
 //Render the image
 

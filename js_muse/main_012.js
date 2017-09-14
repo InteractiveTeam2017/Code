@@ -59,7 +59,7 @@ var spotLight = new THREE.SpotLight(0xffffff, 1.2, 90000, Math.PI/70, 1, 1);
 
 
 // Create a sphere to make visualization easier.
-var geometry = new THREE.SphereGeometry(35,100,100);
+var geometry = new THREE.SphereGeometry(40,100,100);
 var material = new THREE.MeshPhongMaterial({
 	map: new THREE.TextureLoader().load('/images/earthtwo.jpeg'),
 	color: 0xDDDDDD,
@@ -94,7 +94,7 @@ var materialglow = new THREE.MeshPhongMaterial({
 		color: 0xffffff, transparent: false, blending: THREE.AdditiveBlending
 	});
 	var sprite = new THREE.Sprite( spriteMaterial );
-	sprite.scale.set(110, 110, 1.0);
+	sprite.scale.set(135, 135, 1.0);
 	mesh.add(sprite); // this centers the glow at the mesh
 
 
@@ -115,7 +115,7 @@ scene.add(sphere);
 var particleMat = new THREE.PointsMaterial({
 		color: 'rgb(255, 255, 255)',
 		size: 2,
-
+        map: new THREE.TextureLoader().load('/images/particle.png'),
 		transparent: true,
 		blending: THREE.AdditiveBlending,
 		depthWrite: false
@@ -172,9 +172,9 @@ var particleMat = new THREE.PointsMaterial({
 		// 0-90
 	    var degreex = Math.PI/32*2;
 		var degreey = Math.PI/32*21;
-		vex.x = Math.cos(degreex)*Math.sin(degreey)*36;
-		vex.y = Math.sin(degreex)*Math.sin(degreey)*36;
-		vex.z = Math.cos(degreey)*36 ;
+		vex.x = Math.cos(degreex)*Math.sin(degreey)*41;
+		vex.y = Math.sin(degreex)*Math.sin(degreey)*41;
+		vex.z = Math.cos(degreey)*41;
 }
     addPosition3();
 
@@ -208,14 +208,15 @@ controls.zoomSpeed = 0.1;
 */
 
 // disable two finger move
-controls.noPan = true;
+//controls.noPan = true;
 
 	controls = new THREE.OrbitControls( camera, renderer.domElement );
 	controls.autoRotate = true;
 	controls.autoRotateSpeed = 1;
 	controls.minDistance = 80; // how far can you zoom in
 	controls.maxDistance = 70; // how far can you zoom out
-
+    // disable two finger move
+    controls.enablePan = false;
 
 //Render the image
 
