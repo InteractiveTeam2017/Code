@@ -6,6 +6,7 @@
 	<style>
 		
 		html, body{
+			background-color:#000000;
   height:100%;
   font-family: Helvetica;
 }
@@ -13,8 +14,52 @@
 body { 
    margin:0; 
    padding:0; 
+	
 }
+		/*
+		#clearfix{
+			overflow:hidden;
+		}
+		
+		#u135228{
+			overflow: auto;
+			float:left;
+			margin-left:-50px;
+			z-index:-1;
+		}
+		#lightbox{
+			width:50px;
+			overflow: auto;
+			float:left;
+		}
+		
+		#lightbox p{
+			text-align: justify;
+			text-decoration-color: #FB080C;
+		}*/
+		
+		#u135228{
+			position: relative;
+			margin:0px;
+			
+		}
+		#lightbox{
+			margin:0px;
+			position: absolute;
+			top:200px;
+			left:20px;
+			width:50px;
+			height:10px;
+			display:none;
+		}
+		p{
+			color: #F91317;
+			margin:0px;
+			
+		}
+		
 	</style>
+	
 <!--
 /*
 canvas {
@@ -24,9 +69,19 @@ canvas {
 </head>
 <body>
 
-<div id="u135228">
+<!--<div id="clearfix">-->
+   
+    
+   
+    <div id="u135228">
+        
 	</div>
 	
+	<div id="lightbox">
+			<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+	</div>
+	
+<!--</div>-->
 	<script src="./lib/three.js"></script>
 	<!--<script src="https://rawgit.com/mrdoob/three.js/dev/examples/js/controls/TrackballControls.js "></script>-->
 	<script src="./lib/OrbitControls.js"></script>
