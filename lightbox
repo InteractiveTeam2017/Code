@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>lightbox</title>
+  
+  <link rel="stylesheet" href="css/jquery.fancybox.css" />
+  
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="js/musi-browser.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+	
+	<div id="lightbox">
+		<h1>Australia</h1>
+		
+		<div class="icons">
+		<img src="assets/icons/aid.png" alt="foreign aid icon" />
+		</div>
+		
+		<div class="lbImages">
+		<img src="assets/images/SS01.jpg" alt="South Sudan" />
+		</div>
+		
+		<div class="contents">
+		<p>·Much like other developed nations, Australia's government finds greater importance in the next tax cuts, rather than stabilising inequality and poverty. </p>
+		<p>·Much like other developed nations, Australia's government finds greater importance in the next tax cuts, rather than stabilising inequality and poverty. ·APPROX 105,000 people classed as homeless. However only 6% of this number are sleeping rough. </p>
+   		<p>"We need to shift the mindset that poverty is a reflection of the individual and instead view eradicating poverty as a shared responsibility." - Dr. Cassandra Goldie, Chief Executive Officer, Australian Council Of Social Services (ACOSS). </p>
+		</div>
+  		
+  		<div class="statistics">
+  			<div class="statbox">
+			<h3>POPULATION</h3>
+			<p>24.13 million</p>
+			</div>
+			<div class="statbox">
+			<h3>DEVELOPED STATUS</h3>
+			<p>1st world country</p>
+			</div>
+			<div class="statbox">
+			<h3>LIFE EXPECTANCY</h3>
+			<p>82.45 years</p>
+			</div>
+			<div class="statbox">
+			<h3>POVERTY LINE</h3>
+			<p>Earning less than $400 per week</p>
+			</div>
+			<div class="statbox">
+			<h3>CLASSED HOMELESS</h3>
+			<p>105,000 People</p>
+			</div>
+			<div class="statbox">
+			<h3>CHILDREN IN POVERTY</h3>
+			<p>731,300</p>
+			</div>
+		</div>
+   		
+   		
+  	</div>
+  
+  
+ 
+</body>
+</html>
