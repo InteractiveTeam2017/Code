@@ -3,6 +3,7 @@
 <head>
 
 	<title>Three.js</title>
+	  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<style>
 		
 		html, body{
@@ -44,30 +45,117 @@ body {
 			
 		}
 		#lightbox1{
-			margin:0px;
+			background-color: #FFFFFF;
+	        width: 300px;
+			padding: 0px;
+			margin: 0px;
 			position: absolute;
-			top:200px;
-			left:20px;
-			width:50px;
-			height:10px;
+			top: 4%;
+			left: 75%;
 			display:none;
 		}
 		
 		#lightbox2{
-			margin:0px;
+			background-color: #FFFFFF;
+	        width: 300px;
+			padding: 0px;
+			margin: 0px;
 			position: absolute;
-			top:200px;
-			left:20px;
-			width:50px;
-			height:10px;
+			top: 4%;
+			left: 75%;
 			display:none;
 		}
 		
-		p{
-			color: #F91317;
-			margin:0px;
-			
-		}
+
+
+#main{
+	overflow: scroll;
+	height: 500px;
+}
+
+#main::-webkit-scrollbar{
+	width: 6px;
+	height: 6px;
+	background-color: #FFFFFF;
+}
+#main::-webkit-scrollbar-track {
+	background-color: #FFFFFF;
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+#main::-webkit-scrollbar-thumb {
+	background-color: #E2283E;
+	border-radius: 3px;
+}
+
+#main -webkit-scrollbar-button {
+	background-color: #FFFFFF;
+	display: none;
+}
+.icons {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	
+}
+
+.icons img {
+	width: 40px;
+	height: 40px;
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+h1 {
+	background-color:#E2283E;
+	text-align: left;
+	padding: 20px;
+	font-size: 28;
+	margin: 0px;
+}
+
+.lbImages img {
+	width: 300px;
+	
+}
+
+.contents {
+	padding: 20px;
+		
+}
+
+.contents p {
+	margin-top: 20px;
+	
+}
+
+.statistics {
+	padding: 20px;
+	position: relative;
+	
+}
+
+.statbox {
+	position: relative;
+	width: 124px;
+	height: 100px;
+	float: left;
+		
+}
+
+.statbox h3{
+	font-size: 18;
+}
+
+.statbox p{
+	margin-top: 10px;
+	font-size: 28;
+	
+}
 		
 	</style>
 	
@@ -89,12 +177,101 @@ canvas {
 	</div>
 	
 	<div id="lightbox1">
-			<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-	</div>
+		<h1>Australia</h1>
+		
+		<div class="icons">
+		<img src="assets/icons/aid.png" alt="foreign aid icon" />
+		</div>
+		
+		<div class="lbImages">
+		<img src="assets/images/SS01.jpg" alt="South Sudan" />
+		</div>
+		
+		<div id="main">
+		<div class="contents">
+		<p>·Much like other developed nations, Australia's government finds greater importance in the next tax cuts, rather than stabilising inequality and poverty. </p>
+		<p>·Much like other developed nations, Australia's government finds greater importance in the next tax cuts, rather than stabilising inequality and poverty. ·APPROX 105,000 people classed as homeless. However only 6% of this number are sleeping rough. </p>
+   		<p>"We need to shift the mindset that poverty is a reflection of the individual and instead view eradicating poverty as a shared responsibility." - Dr. Cassandra Goldie, Chief Executive Officer, Australian Council Of Social Services (ACOSS). </p>
+		</div>
+  		
+  		<div class="statistics">
+  			<div class="statbox">
+			<h3>POPULATION</h3>
+			<p>24.13 million</p>
+			</div>
+			<div class="statbox">
+			<h3>DEVELOPED STATUS</h3>
+			<p>1st world country</p>
+			</div>
+			<div class="statbox">
+			<h3>LIFE EXPECTANCY</h3>
+			<p>82.45 years</p>
+			</div>
+			<div class="statbox">
+			<h3>POVERTY LINE</h3>
+			<p>Earning less than $400 per week</p>
+			</div>
+			<div class="statbox">
+			<h3>CLASSED HOMELESS</h3>
+			<p>105,000 People</p>
+			</div>
+			<div class="statbox">
+			<h3>CHILDREN IN POVERTY</h3>
+			<p>731,300</p>
+			</div>
+			</div>
+		</div>
+  	</div>
+	
 	
 	<div id="lightbox2">
-			<p>bbbbbbbbb  bbbbbbbbbbb  bbbbbbbbbbbbbbbbb</p>
-	</div>
+		<h1>Australia</h1>
+		
+		<div class="icons">
+		<img src="assets/icons/aid.png" alt="foreign aid icon" />
+		</div>
+		
+		<div class="lbImages">
+		<img src="assets/images/africacw01.jpg" alt="South Sudan" />
+		</div>
+		
+		<div id="main">
+		<div class="contents">
+		<p>·Much like other developed nations, Australia's government finds greater importance in the next tax cuts, rather than stabilising inequality and poverty. </p>
+		<p>·Much like other developed nations, Australia's government finds greater importance in the next tax cuts, rather than stabilising inequality and poverty. ·APPROX 105,000 people classed as homeless. However only 6% of this number are sleeping rough. </p>
+   		<p>"We need to shift the mindset that poverty is a reflection of the individual and instead view eradicating poverty as a shared responsibility." - Dr. Cassandra Goldie, Chief Executive Officer, Australian Council Of Social Services (ACOSS). </p>
+		</div>
+  		
+  		<div class="statistics">
+  			<div class="statbox">
+			<h3>POPULATION</h3>
+			<p>24.13 million</p>
+			</div>
+			<div class="statbox">
+			<h3>DEVELOPED STATUS</h3>
+			<p>1st world country</p>
+			</div>
+			<div class="statbox">
+			<h3>LIFE EXPECTANCY</h3>
+			<p>82.45 years</p>
+			</div>
+			<div class="statbox">
+			<h3>POVERTY LINE</h3>
+			<p>Earning less than $400 per week</p>
+			</div>
+			<div class="statbox">
+			<h3>CLASSED HOMELESS</h3>
+			<p>105,000 People</p>
+			</div>
+			<div class="statbox">
+			<h3>CHILDREN IN POVERTY</h3>
+			<p>731,300</p>
+			</div>
+			</div>
+		</div>
+  	</div>
+
+
 	
 <!--</div>-->
 	<script src="./lib/three.js"></script>
